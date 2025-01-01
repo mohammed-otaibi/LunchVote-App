@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunchVote</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍔 LunchVote</h1>
+
+    <!-- Form to add a lunch place -->
+    <div class="add-place">
+      <input type="text" id="placeInput" placeholder="Add a lunch place">
+      <button id="addPlaceBtn">+</button>
+    </div>
+
+    <!-- Leading place -->
+    <p id="leadingPlace">Leading Place: None</p>
+
+    <!-- Places list -->
+    <ul id="placesList" class="places-list"></ul>
+
+    <!-- Delete poll button -->
+    <button id="deletePollBtn" class="delete-btn">Delete Poll</button>
+    <div id="success"></div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
